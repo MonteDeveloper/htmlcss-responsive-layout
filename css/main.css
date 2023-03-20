@@ -55,8 +55,18 @@ nav > ul{
     /* background-color: red; debug line */
     padding-top: 100%;
     border-radius: 50%;
-    position: relative;
     overflow: hidden;
+    position: relative;
+}
+
+.posRelative .fa-quote-left{
+    position: absolute;
+    color: #9593e6;
+    font-size: 4rem;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow: visible;
 }
 
 /* ? IMAGES--------------------------------------- */
@@ -70,12 +80,20 @@ img[alt="phone"]{
     margin: auto;
 }
 
-img[alt="testimonial"]{
+img[alt="testimonial"], img[alt="aboutMan"]{
     position: absolute;
-    top: 0;
-    left: -25%;
     height: 100%;
     width: auto;
+}
+
+img[alt="testimonial"]{
+    top: 0;
+    left: -25%;
+}
+
+img[alt="aboutMan"]{
+    top: 0;
+    left: 0;
 }
 
 /* ? BUTTONS-------------------------------------- */
