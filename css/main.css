@@ -6,7 +6,8 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 600;
 }
 
 html{
@@ -32,6 +33,20 @@ nav > ul{
     list-style-type: none;
 }
 
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
 .card{
     width: 100%;
     text-align: center;
@@ -39,12 +54,9 @@ nav > ul{
     padding: 1.5em;
 }
 
-.card#bigCard p{
-    text-align: start;
-}
-
 .card#bigCard{
     padding-bottom: 0;
+    text-align: start;
 }
 
 #moreRounded{
@@ -67,6 +79,10 @@ nav > ul{
     right: 0;
     z-index: 1;
     overflow: visible;
+}
+
+.fa-bars{
+    font-size: 1.5rem;
 }
 
 /* ? IMAGES--------------------------------------- */
@@ -96,8 +112,22 @@ img[alt="aboutMan"]{
     left: 0;
 }
 
-/* ? BUTTONS-------------------------------------- */
+img[alt="logo"]{
+    padding: 1rem 0;
+}
 
+/* ? BUTTONS-------------------------------------- */
+button{
+    border: none;
+    padding: .5rem 3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.circleButton{
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+}
 
 /* ? HOVER---------------------------------------- */
 
@@ -108,7 +138,8 @@ img[alt="aboutMan"]{
 .smallPadding       { padding: 1rem;}
 .smallRowPadding    { padding-top: 1em; padding-bottom: 1em; }
 .smallColPadding    { padding-right: 1em; padding-left: 1em; }
-.mediumRowPadding   { padding-top: 3em; padding-bottom: 3em; }
+.mediumRowPadding   { padding-top: 3rem; padding-bottom: 3rem; }
+.mediumBotPadding   { padding-bottom: 3rem; }
 .mediumPadding      { padding: 3rem; }
 .bigRowPadding      { padding-top: 5rem; padding-bottom: 5rem; }
 .hugeRowPadding     { padding-top: 8rem; padding-bottom: 8rem; }
@@ -184,7 +215,7 @@ img[alt="aboutMan"]{
 .grayBorder{ border: 2px solid #ededed; }
 
 /* ? BG COLORS------------------------------------ */
-.bgBlue         {background-color: #0077be; }
+.bgBlue         {background-color: #0083fd; }
 .bgGreen        {background-color: #008000; }
 .bgPurple       {background-color: #8a2be2; }
 .bgOrange       {background-color: #ff6801; }
@@ -197,7 +228,7 @@ img[alt="aboutMan"]{
 .bgWhite        { background-color: white; }
 .bgBlack        { background-color: black; }
 .bgClearBlack   { background-color: #363636; } 
-.bgSkyblue      { background-color: #b5d0e6; }
+.bgSkyblue      { background-color: #b3dcff; }
 .bgPeriwinkle   { background-color: #9593e6; }
 
 /* UTILITY---------------------------------------- */
@@ -206,10 +237,14 @@ img[alt="aboutMan"]{
 .textCanceled{ text-decoration: line-through; }
 .textUnderline{ text-decoration: underline;}
 .textColorRed{ color: red; }
+.textColorGrey{ color: #516170; }
 .textColorGreen{ color: #4ac801; }
 .textColorWhite{ color: white; }
-.textColorBlue{ color: #0060fe; }
-.textColorGray{ color: gray; }
+.textColorBlue{ color: #0083fd; }
+.textColorSkyBlue{ color: #b3dcff; }
+.textColorPeriwinkle{ color: #9593e6; }
+.textColorLightGrey{ color: #8d8d8d; }
+.textColorGold{ color: #fdc05f; }
 .textColorClearblack { color: #60092b; }
 .textTiny{ font-size: .6em; }
 .overFlowY{ overflow-y: auto;}
@@ -219,6 +254,10 @@ img[alt="aboutMan"]{
 .overflowAuto{ overflow-y: auto;}
 .resetAll{ all: initial; }
 .marginAuto{ margin: auto; }
+.biggerText{ font-size: 3em;}
+.smallerText{ font-size: .6em; }
+.largerText{ font-size: 1.5em;}
+.tinyText{ font-weight: 400;}
 
 
 /* RESPONSIVE------------------------------------- */

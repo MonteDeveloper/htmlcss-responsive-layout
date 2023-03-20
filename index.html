@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Open+Sans:wght@400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <title>First Responsive Website</title>
 </head>
 <body>
@@ -13,7 +16,7 @@
         <div class="bgBlue">
             <div class="mainResponsiveBox flexRow flexMainBetween flexCrossCenter">
                 <div>
-                    <img src="./img/logo.png" alt="">
+                    <img src="./img/logo.png" alt="logo">
                 </div>
                 <div>
                     <nav>
@@ -33,16 +36,19 @@
 
     <body>
         <!-- FIRST BASIC APP INFO -->
-        <section>
+        <section class="mediumRowMargin">
             <div class="mainResponsiveBox flexRow flexWrap smallGap">
                 <!-- Big Card -->
                 <div class="bgSkyblue card" id="bigCard">
                     <div>
-                        <h3>Get a demo application</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui totam cum sunt libero blanditiis dignissimos quia quas iusto veniam eligendi debitis, velit itaque accusamus at sed omnis molestiae asperiores.
+                        <h3 class="textColorBlue">Get a demo application</h3>
+                        <p class="textColorGrey">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit qui totam cum sunt libero blanditiis dignissimos quia quas iusto veniam.
                         </p>
-                        <button> App Store </button>
+                        <button class="bgBlue textColorWhite smallRowMargin">
+                            <i class="fa-brands fa-apple"></i>
+                             App Store
+                        </button>
                     </div>
 
                     <div>
@@ -52,54 +58,69 @@
 
                 <!-- Small cards -->
                 <div class="bgSkyblue card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Titolo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                    
+                    <h3 class="textColorBlue">
+                        <span class="fa-solid fa-file-code biggerText"></span>
+                        <br>
+                        Clean Code
+                    </h3>
+                    <p class="textColorGrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque.
                     </p>
                 </div>
                 <div class="bgSkyblue card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Titolo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                    
+                    <h3 class="textColorBlue">
+                        <span <i class="fa-solid fa-compass-drafting biggerText"></i></span>
+                        <br>
+                        Web Design
+                    </h3>
+                    <p class="textColorGrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque.
                     </p>
                 </div>
                 <div class="bgSkyblue card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Titolo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                    
+                    <h3 class="textColorBlue">
+                        <span class="fa-solid fa-laptop-code biggerText"></span>
+                        <br>
+                        Development
+                    </h3>
+                    <p class="textColorGrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque.
                     </p>
                 </div>
                 <div class="bgSkyblue card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Titolo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                    <h3 class="textColorBlue">
+                        <span class="fa-solid fa-bullhorn biggerText"></span>
+                        <br>
+                        Branding
+                    </h3>
+                    <p class="textColorGrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- PLANNING -->
-        <section class="bgPeriwinkle">
+        <section class="bgPeriwinkle mediumRowPadding">
             <div class="mainResponsiveBox flexRow flexWrap">
-                <div>
+                <div class="textColorWhite">
                     <img src="./img/planning1.png" alt="planning">
-                    <h2>Strategic Planning</h2>
+                    <h2 class="smallRowMargin">Strategic Planning</h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab minima voluptatem dolorem adipisci, officia quo commodi perferendis, modi doloremque nesciunt error asperiores quia, voluptates recusandae molestias ex eum ad in.
                     </p>
                 </div>
                 <div>
-                    <div class="bgWhite card" id="moreRounded">
+                    <div class="bgWhite card smallTopMargin" id="moreRounded">
                         <img src="./img/planning2.png" alt="planning">
                         <h3>App Development</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas tempore architecto sed. Cupiditate accusantium.
                         </p>
-                        <button><i class="fa-solid fa-arrow-down-long"></i></button>
+                        <button class="bgPeriwinkle circleButton smallTopMargin"><i class="fa-solid fa-arrow-down-long"></i></button>
                     </div>
                 </div>
             </div>
@@ -107,15 +128,17 @@
 
         <!-- TESTIMONIALS-PARTNERS -->
         <section>
-            <div class="mainResponsiveBox textAlCenter">
-                <h3>TESTIMONIALS</h3>
-                <h2>We are committed expert partners</h2>
-                <p>
+            <div class="mainResponsiveBox textAlCenter mediumRowMargin">
+                <h3>
+                    <span class="smallerText tinyText">TESTIMONIALS</span>    
+                </h3>
+                <h2 class="textColorPeriwinkle">We are committed expert partners</h2>
+                <p class="smallRowMargin">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga rerum repudiandae exercitationem, accusamus eveniet culpa explicabo voluptate fugit assumenda, tenetur eos doloribus minus!
                 </p>
 
                 <!-- partner cards -->
-                <div class="bgPeriwinkle card textColorWhite flexRow flexWrap" id="moreRounded">
+                <div class="bgPeriwinkle card textColorWhite flexRow flexWrap smallBotMargin smallGap" id="moreRounded">
                     <div class="col80 marginAuto">
                         <div class="perfectCircle">
                             <img src="./img/testimonial1.jpg" alt="testimonial">
@@ -127,13 +150,13 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas tempore architecto sed. Cupiditate accusantium.
                             <i class="fa-solid fa-quote-right"></i>
                         </p>
-                        <h3>Nome Cognome</h3>
+                        <h3>NAT REYNOLDS</h3>
                     </div>
                 </div>
-                <div class="bgPeriwinkle card textColorWhite flexRow flexWrap" id="moreRounded">
+                <div class="bgPeriwinkle card textColorWhite flexRow flexWrap smallBotMargin smallGap" id="moreRounded">
                     <div class="col80 marginAuto">
                         <div class="perfectCircle">
-                            <img src="./img/testimonial1.jpg" alt="testimonial">
+                            <img src="./img/testimonial2.jpg" alt="testimonial">
                         </div>
                     </div>
                     <div>
@@ -142,13 +165,13 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas tempore architecto sed. Cupiditate accusantium.
                             <i class="fa-solid fa-quote-right"></i>
                         </p>
-                        <h3>Nome Cognome</h3>
+                        <h3>CELIA ALMEDA</h3>
                     </div>
                 </div>
-                <div class="bgPeriwinkle card textColorWhite flexRow flexWrap" id="moreRounded">
+                <div class="bgPeriwinkle card textColorWhite flexRow flexWrap smallBotMargin smallGap" id="moreRounded">
                     <div class="col80 marginAuto">
                         <div class="perfectCircle">
-                            <img src="./img/testimonial1.jpg" alt="testimonial">
+                            <img src="./img/testimonial3.jpg" alt="testimonial">
                         </div>
                     </div>
                     <div>
@@ -157,7 +180,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas tempore architecto sed. Cupiditate accusantium.
                             <i class="fa-solid fa-quote-right"></i>
                         </p>
-                        <h3>Nome Cognome</h3>
+                        <h3>BOB ROBERTS</h3>
                     </div>
                 </div>
             </div>
@@ -165,56 +188,68 @@
 
         <!-- BENEFITS -->
         <section class="bgPeriwinkle">
-            <div class="mainResponsiveBox">
-                <h2>Benefits of working with us</h2>
+            <div class="mainResponsiveBox mediumRowPadding">
+                <h2 class="textAlCenter textColorWhite mediumBotPadding">Benefits of working with us</h2>
                 <div class="flexRow flexWrap smallGap">
                     <div class="bgWhite card textAlStart">
-                        <h2>01</h2>
-                        <h3>High Quality</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                        <div class="textColorPeriwinkle">
+                            <h2>01</h2>
+                            <h3>High Quality</h3>
+                        </div>
+                        <p class="textColorLightGrey tinyText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit.
                         </p>
-                        <button> more </button>
+                        <button class="smallTopMargin textColorWhite bgPeriwinkle"> more </button>
                     </div>
                     <div class="bgWhite card textAlStart">
-                        <h2>02</h2>
-                        <h3>High Quality</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                        <div class="textColorPeriwinkle">
+                            <h2>02</h2>
+                            <h3>Creative Team</h3>
+                        </div>
+                        <p class="textColorLightGrey tinyText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit.
                         </p>
-                        <button> more </button>
+                        <button class="smallTopMargin textColorWhite bgPeriwinkle"> more </button>
                     </div>
                     <div class="bgWhite card textAlStart">
-                        <h2>03</h2>
-                        <h3>High Quality</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                        <div class="textColorPeriwinkle">
+                            <h2>03</h2>
+                            <h3>Amazing Results</h3>
+                        </div>
+                        <p class="textColorLightGrey tinyText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit.
                         </p>
-                        <button> more </button>
+                        <button class="smallTopMargin textColorWhite bgPeriwinkle"> more </button>
                     </div>
                     <div class="bgWhite card textAlStart">
-                        <h2>04</h2>
-                        <h3>High Quality</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                        <div class="textColorPeriwinkle">
+                            <h2>04</h2>
+                            <h3>Best Pricing</h3>
+                        </div>
+                        <p class="textColorLightGrey tinyText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit.
                         </p>
-                        <button> more </button>
+                        <button class="smallTopMargin textColorWhite bgPeriwinkle"> more </button>
                     </div>
                     <div class="bgWhite card textAlStart">
-                        <h2>05</h2>
-                        <h3>High Quality</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                        <div class="textColorPeriwinkle">
+                            <h2>05</h2>
+                            <h3>Innovations</h3>
+                        </div>
+                        <p class="textColorLightGrey tinyText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit.
                         </p>
-                        <button> more </button>
+                        <button class="smallTopMargin textColorWhite bgPeriwinkle"> more </button>
                     </div>
                     <div class="bgWhite card textAlStart">
-                        <h2>06</h2>
-                        <h3>High Quality</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit repellendus nisi eos ipsum voluptas a repudiandae aut corrupti.
+                        <div class="textColorPeriwinkle">
+                            <h2>06</h2>
+                            <h3>24/7 Support</h3>
+                        </div>
+                        <p class="textColorLightGrey tinyText">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt consequuntur odit eaque at, dolores officia, doloremque, ullam architecto enim non reprehenderit.
                         </p>
-                        <button> more </button>
+                        <button class="smallTopMargin textColorWhite bgPeriwinkle"> more </button>
                     </div>
                 </div>
             </div>
@@ -222,28 +257,30 @@
 
         <!-- ABOUT US -->
         <section>
-            <div class="mainResponsiveBox flexRow flexWrap">
+            <div class="mainResponsiveBox flexRow flexWrap mediumRowPadding">
                 <div>
-                    <h2>About Us</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil accusamus eligendi odio iste minima veritatis. Suscipit ratione aliquid earum a ipsam consectetur architecto tempore quasi dolores libero vel, enim deserunt.
-                    </p>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor totam amet possimus doloremque reiciendis, libero exercitationem, sed fugit suscipit magni magnam. Rerum quasi sequi incidunt. Alias voluptatum explicabo voluptates!
-                    </p>
+                    <h2 class="textColorPeriwinkle smallBotMargin">About Us</h2>
+                    <div class="tinyText">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil accusamus eligendi odio iste minima veritatis. Suscipit ratione aliquid earum a ipsam consectetur architecto tempore quasi dolores libero vel, enim deserunt.
+                        </p>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor totam amet possimus doloremque reiciendis, libero exercitationem, sed fugit suscipit magni magnam. Rerum quasi sequi incidunt. Alias voluptatum explicabo voluptates!
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <div class="posRelative col60">
+                    <div class="posRelative col60 mediumRowMargin">
                         <i class="fa-solid fa-quote-left"></i>
                         <div class="perfectCircle">
                             <img src="./img/about.jpg" alt="aboutMan">
                         </div>
                     </div>
-                    <h3>
+                    <p class="largerText textColorPeriwinkle">
                         I help companies dolor sit amet consectetur adipisicing elit.
-                    </h3>
-                    <button> 
+                    </p>
+                    <button class="textColorWhite bgPeriwinkle mediumRowMargin"> 
                         <i class="fa-brands fa-linkedin"></i>
                         Find me on linkedin 
                     </button>
@@ -253,15 +290,15 @@
 
         <!-- GET STARTED -->
         <section class="bgPeriwinkle">
-            <div class="mainResponsiveBox textAlCenter">
-                <h4>GET STARTED</h4>
+            <div class="mainResponsiveBox textAlCenter textColorWhite mediumRowPadding">
+                <h4 class="tinyText textColorSkyBlue">GET STARTED</h4>
                 <h3>Simple, Transparent Pricing</h3>
-                <h2>It's Free!</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus molestiae aperiam maxime quos iure illum rem odit quo! Est iure architecto quae possimus? Maxime in saepe sed nisi corrupti.
+                <h2 class="biggerText textColorGold">It's Free!</h2>
+                <p class="tinyText smallRowMargin">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatibus molestiae aperiam maxime!
                 </p>
-                <button> Get Started </button>
-                <p>
+                <button class="textColorPeriwinkle"> Get Started </button>
+                <p class="tinyText smallRowMargin">
                     Copyright 2021 Boolean &middot; Classe XX &middot;
                     <span class="textUnderline"> Privacy policy </span> 
                 </p>
@@ -270,15 +307,15 @@
     </body>
 
     <footer class="bgClearBlack">
-        <div class="mainResponsiveBox textColorWhite textAlCenter">
+        <div class="mainResponsiveBox textColorWhite textAlCenter mediumRowPadding tinyText">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem iure veritatis, perspiciatis dolorem!
             </p>
-            <br>
+            <br><br><br>
             <p>
-                <a href="#"> Lorem, ipsum </a>
+                <a class="textColorPeriwinkle" href="#"> Lorem, ipsum </a>
                 dolor sit amet consectetur
-                <a href="#"> Boolean Careers </a>
+                <a class="textColorPeriwinkle" href="#"> Boolean Careers </a>
             </p>
         </div>
     </footer>
