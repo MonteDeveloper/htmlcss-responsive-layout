@@ -204,6 +204,7 @@ img[alt="aboutMan"]{
 .textAlCenter{ text-align: center; }
 .textAlStart{ text-align: start; }
 .textCanceled{ text-decoration: line-through; }
+.textUnderline{ text-decoration: underline;}
 .textColorRed{ color: red; }
 .textColorGreen{ color: #4ac801; }
 .textColorWhite{ color: white; }
@@ -218,5 +219,6 @@ img[alt="aboutMan"]{
 .overflowAuto{ overflow-y: auto;}
 .resetAll{ all: initial; }
 .marginAuto{ margin: auto; }
+
 
 /* RESPONSIVE------------------------------------- */
