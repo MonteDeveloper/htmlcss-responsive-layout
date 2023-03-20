@@ -15,8 +15,9 @@ html{
 
 /* * BOXES & MY CLASSES----------------------------- */
 .mainResponsiveBox{
-    width: 95%;
+    width: 80%;
     margin: auto;
+    max-width: 1200px;
 }
 
 header{
@@ -31,8 +32,27 @@ nav > ul{
     list-style-type: none;
 }
 
-/* ? IMAGES--------------------------------------- */
+.card{
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 1.5em;
+}
 
+.card#bigCard p{
+    text-align: start;
+}
+
+.card#bigCard{
+    padding-bottom: 0;
+}
+
+/* ? IMAGES--------------------------------------- */
+img[alt="phone"]{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
 
 /* ? BUTTONS-------------------------------------- */
 
@@ -81,6 +101,11 @@ nav > ul{
 .flexCrossStretch{ align-items: stretch;}
 .flexCrossEnd{ align-items: end;}
 .flexCrossBaseline{ align-items: baseline;}
+/* gaps */
+.smallGap{ gap: 1rem;}
+.mediumGap{ gap: 3rem;}
+.largeGap{ gap: 5rem;}
+.hugeGap{ gap: 10rem;}
 
 /* ? WIDTH---------------------------------------- */
 .col10 { width: 10%; } /* corrisponde a 1/10 */
