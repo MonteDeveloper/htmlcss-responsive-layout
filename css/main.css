@@ -51,6 +51,14 @@ nav > ul{
     border-radius: 40px;
 }
 
+.perfectCircle{
+    /* background-color: red; debug line */
+    padding-top: 100%;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
 /* ? IMAGES--------------------------------------- */
 img{
     width: 100%;
@@ -60,6 +68,14 @@ img[alt="phone"]{
     width: 90%;
     display: block;
     margin: auto;
+}
+
+img[alt="testimonial"]{
+    position: absolute;
+    top: 0;
+    left: -25%;
+    height: 100%;
+    width: auto;
 }
 
 /* ? BUTTONS-------------------------------------- */
@@ -182,5 +198,6 @@ img[alt="phone"]{
 .marginReset{ margin: 0 !important;}
 .overflowAuto{ overflow-y: auto;}
 .resetAll{ all: initial; }
+.marginAuto{ margin: auto; }
 
 /* RESPONSIVE------------------------------------- */
