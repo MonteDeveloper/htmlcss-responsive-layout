@@ -18,7 +18,7 @@ html{
 .mainResponsiveBox{
     width: 80%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 header{
@@ -334,5 +334,60 @@ mobile: dai 480px in giù */
     .aboutUsSection .secondBox{
         width: 30%;
     }
+
+    .aboutUsSection .posRelative{
+        margin: 0 0 1rem 0;
+    }
 }
+
+@media screen and (min-width: 768px){
+    .planningSection .firstBox, .planningSection .secondBox{
+        width: 45%;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+        line-height: 3rem;
+    }
+    
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .benefitsSection .card{
+        width: calc(100% / 3 - 1rem);
+    }
+
+    .aboutUsSection .firstBox{
+        width: 70%;
+    }
+
+    .aboutUsSection .posRelative{
+        margin: 0 0 1rem 0;
+    }
+
+    .aboutUsSection .secondBox{
+        width: 20%;
+    }
+
+    .aboutUsSection .secondBox .fa-quote-left{
+        font-size: 4rem;
+    }
+
+    i.fa-bars{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul li button{
+        padding: .5rem 1rem;
+    }
 }
