@@ -184,6 +184,7 @@ img[alt="testimonial"]{
 
 /* UTILITY---------------------------------------- */
 .textAlCenter{ text-align: center; }
+.textAlStart{ text-align: start; }
 .textCanceled{ text-decoration: line-through; }
 .textColorRed{ color: red; }
 .textColorGreen{ color: #4ac801; }
