@@ -261,3 +261,78 @@ button{
 
 
 /* RESPONSIVE------------------------------------- */
+
+/* tablet: dai 768px in giù
+mobile: dai 480px in giù */
+
+@media screen and (min-width: 480px){
+    .mainResponsiveBox{
+        width: 90%;
+    }
+
+    #infoSection .card{
+        width: calc(100% / 3 - 1rem);
+    }
+
+    .card{
+        padding: 1.5rem 1rem;
+    }
+
+    .card#bigCard{
+        width: calc(100% / 3 * 2 - 1rem);
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+    
+    h3{
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+    
+    p{
+        font-size: .8rem;
+        line-height: 1.5rem;
+    }
+
+    img[alt="phone"]{
+        width: 180px;
+        margin-left: .5rem;
+    }
+
+    .testimonialSection .col80{
+        width: 25%;
+    }
+
+    .testimonialSection .col100{
+        width: 70%;
+        text-align: start;
+    }
+
+    .benefitsSection .card{
+        width: 48%;
+    }
+
+    .aboutUsSection .firstBox{
+        width: 60%;
+    }
+
+    .aboutUsSection .secondBox .col60{
+        width: 100%;
+    }
+
+    .aboutUsSection .secondBox .fa-quote-left{
+        font-size: 3rem;
+    }
+
+    .aboutUsSection .secondBox button{
+        font-size: .6rem;
+        padding: .5rem 1rem;
+    }
+
+    .aboutUsSection .secondBox{
+        width: 30%;
+    }
+}
+}
