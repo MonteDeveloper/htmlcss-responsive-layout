@@ -14,7 +14,22 @@ html{
 }
 
 /* * BOXES & MY CLASSES----------------------------- */
+.mainResponsiveBox{
+    width: 95%;
+    margin: auto;
+}
 
+header{
+    color: white;
+}
+
+nav{
+    display: none;
+}
+
+nav > ul{
+    list-style-type: none;
+}
 
 /* ? IMAGES--------------------------------------- */
 
