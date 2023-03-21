@@ -93,7 +93,7 @@ li a{
     position: relative;
 }
 
-.aboutUsSection .secondBox .fa-quote-left{
+#aboutUsSection .secondBox .fa-quote-left{
     position: absolute;
     color: #9593e6;
     font-size: 15vw;
