@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+:root {
+    --tiny: .5rem;
+    --small: 1rem;
+    --medium: 3rem;
+    --big: 5rem;
+    --huge: 10rem;
+}
+
 body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -159,32 +167,37 @@ button:hover, li a:hover{
 }
 
 /* ? MARGIN & PADDING----------------------------- */
-/* padding */
-.smallTopPadding    { padding-top: .6em; }
-.smallPadding       { padding: 1rem;}
-.smallRowPadding    { padding-top: 1em; padding-bottom: 1em; }
-.smallColPadding    { padding-right: 1em; padding-left: 1em; }
-.mediumRowPadding   { padding-top: 3rem; padding-bottom: 3rem; }
-.mediumBotPadding   { padding-bottom: 3rem; }
-.mediumPadding      { padding: 3rem; }
-.bigRowPadding      { padding-top: 5rem; padding-bottom: 5rem; }
-.hugeRowPadding     { padding-top: 8rem; padding-bottom: 8rem; }
-/* margin */
-.smallRowMargin     { margin-top: 1em; margin-bottom: 1em; }
-.smallBotMargin     { margin-bottom: 1rem; }
-.smallTopMargin     { margin-top: 1em; }
-.smallMarginRight   { margin-right: .5em; }
-.smallMarginLeft    { margin-left: .5em; }
-.mediumRowMargin    { margin-top: 2.5em; margin-bottom: 2.5em; }
-.mediumTopMargin    { margin-top: 2.5em; }
-.mediumBotMargin    { margin-bottom: 2.5rem; }
-.mediumMarginRight  { margin-right: 2.5rem; }
-.bigMarginLeft      { margin-left: 5em; }
-.bigMarginRight     { margin-right: 5em; }
-.bigTopMargin       { margin-top: 5em;}
-.bigRowMargin       { margin-top: 5em; margin-bottom: 5em;}
-.hugeTopMargin      { margin-top: 10rem; }
-.hugeRowMargin      { margin-top: 10rem; margin-bottom: 10rem; }
+/* PADDING---------------------------------------- */
+.tinyTopPadding     { padding-top: var(--tiny); }
+
+.smallPadding       { padding: var(--small);}
+.smallRowPadding    { padding-top: var(--small); padding-bottom: var(--small); }
+.smallColPadding    { padding-right: var(--small); padding-left: var(--small); }
+
+.mediumRowPadding   { padding-top: var(--medium); padding-bottom: var(--medium); }
+.mediumBotPadding   { padding-bottom: var(--medium); }
+.mediumPadding      { padding: var(--medium); }
+
+.bigRowPadding      { padding-top: var(--big); padding-bottom: var(--big); }
+
+.hugeRowPadding     { padding-top: var(--huge); padding-bottom: var(--huge); }
+
+/* MARGIN----------------------------------------- */
+.tinyTopMargin      { margin-top: var(--tiny); } 
+.tinyRightMargin    { margin-right: var(--tiny); } 
+.tinyLeftMargin     { margin-left: var(--tiny); } 
+.smallRowMargin     { margin-top: var(--small); margin-bottom: var(--small); }
+.smallBotMargin     { margin-bottom: var(--small); }
+.mediumRowMargin    { margin-top:var( --medium) ;margin-bottom :var( --medium) ;}
+.mediumTopMargin    { margin-top :var( --medium) ;}
+.mediumBotMargin    { margin-bottom :var( --medium) ;}
+.mediumRightMargin  { margin-right :var( --medium) ;}
+.bigLeftMargin      { margin-left :var( --big) ;}
+.bigRightMargin     { margin-right :var( --big) ;}
+.bigTopMargin       { margin-top :var( --big);}
+.bigRowMargin       { margin-top :var( --big) ;margin-bottom :var( --big);}
+.hugeTopMargin      { margin-top :var( --huge) ;}
+.hugeRowMargin      { margin-top :var( --huge) ;margin-bottom :var( --huge) ;}
 
 /* ? FLEX----------------------------------------- */
 .flexRow            { display: flex; flex-direction: row; }
@@ -201,10 +214,11 @@ button:hover, li a:hover{
 .flexCrossEnd       { align-items: end;}
 .flexCrossBaseline  { align-items: baseline;}
 /* gaps */
-.smallGap   { gap: 1rem;}
-.mediumGap  { gap: 3rem;}
-.largeGap   { gap: 5rem;}
-.hugeGap    { gap: 10rem;}
+.tinyGap    { gap: var(--tiny);}
+.smallGap   { gap: var(--small);}
+.mediumGap  { gap: var(--medium);}
+.bigGap     { gap: var(--big);}
+.hugeGap    { gap: var(--huge);}
 
 /* ? WIDTH---------------------------------------- */
 .col10  { width: 10%; } /* corrisponde a 1/10 */
@@ -234,25 +248,22 @@ button:hover, li a:hover{
 .hugeMinH   { min-height: 600px; }
 .h100       { height: 100%;}
 
-.maxHeightEqualsToWidthDiv3{ max-height: calc(100vw / 3);}
-
 /* ? BORDER--------------------------------------- */
-.bordSection{ border: black 2px dashed; }
-.grayBorder{ border: 2px solid #ededed; }
+.grayBorder { border: 2px solid #ededed; }
 
 /* ? BG COLORS------------------------------------ */
-.bgBlue         {background-color: #0083fd; }
-.bgGreen        {background-color: #008000; }
-.bgPurple       {background-color: #8a2be2; }
-.bgOrange       {background-color: #ff6801; }
-.bgRed          {background-color: #fe0100; }
-.bgPink         {background-color: #ffc0cb; }
-.bgYellow       {background-color: #ffff00; }
-.bgGrey         {background-color: #f5f5f5; }
-.bgTeal         {background-color: #008080; } 
-.bgBrown        {background-color: #a52a2a; }
 .bgWhite        { background-color: white; }
 .bgBlack        { background-color: black; }
+.bgBlue         { background-color: #0083fd; }
+.bgGreen        { background-color: #008000; }
+.bgPurple       { background-color: #8a2be2; }
+.bgOrange       { background-color: #ff6801; }
+.bgRed          { background-color: #fe0100; }
+.bgPink         { background-color: #ffc0cb; }
+.bgYellow       { background-color: #ffff00; }
+.bgGrey         { background-color: #f5f5f5; }
+.bgTeal         { background-color: #008080; } 
+.bgBrown        { background-color: #a52a2a; }
 .bgClearBlack   { background-color: #363636; } 
 .bgSkyblue      { background-color: #b3dcff; }
 .bgPeriwinkle   { background-color: #9593e6; }
@@ -286,7 +297,7 @@ button:hover, li a:hover{
 .tinyText{ font-weight: 400;}
 
 
-/* RESPONSIVE------------------------------------- */
+/* !RESPONSIVE------------------------------------- */
 
 /* tablet: dai 768px in giù
 mobile: dai 480px in giù */
