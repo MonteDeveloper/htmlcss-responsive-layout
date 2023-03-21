@@ -23,6 +23,21 @@ html{
 
 header{
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* opacity: .5; debug */
+}
+
+main::before{
+    content:'';
+    display:block;
+    height:50px;
+}
+
+section{
+    scroll-margin-top: 75px;
 }
 
 nav{
@@ -45,6 +60,12 @@ h3{
 p{
     font-size: 1rem;
     line-height: 1.8rem;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    transition: opacity .2s;
 }
 
 .card{
@@ -121,6 +142,7 @@ button{
     padding: .5rem 3rem;
     border-radius: 20px;
     font-size: 1rem;
+    transition: shadow-box, opacity .2s;
 }
 
 .circleButton{
@@ -130,6 +152,10 @@ button{
 
 /* ? HOVER---------------------------------------- */
 
+button:hover, li a:hover{
+    opacity: .7;
+    cursor: pointer;
+}
 
 /* ? MARGIN & PADDING----------------------------- */
 /* padding */
@@ -300,47 +326,47 @@ mobile: dai 480px in giù */
         margin-left: .5rem;
     }
 
-    .testimonialSection .firstBox{
+    #testimonialSection .firstBox{
         width: 25%;
     }
 
-    .testimonialSection .secondBox{
+    #testimonialSection .secondBox{
         width: 70%;
         text-align: start;
     }
 
-    .benefitsSection .card{
+    #benefitsSection .card{
         width: 48%;
     }
 
-    .aboutUsSection .firstBox{
+    #aboutUsSection .firstBox{
         width: 60%;
     }
 
-    .aboutUsSection .secondBox .col60{
+    #aboutUsSection .secondBox .col60{
         width: 100%;
     }
 
-    .aboutUsSection .secondBox .fa-quote-left{
+    #aboutUsSection .secondBox .fa-quote-left{
         font-size: 9vw;
     }
 
-    .aboutUsSection .secondBox button{
+    #aboutUsSection .secondBox button{
         font-size: .6rem;
         padding: .5rem 1rem;
     }
 
-    .aboutUsSection .secondBox{
+    #aboutUsSection .secondBox{
         width: 30%;
     }
 
-    .aboutUsSection .posRelative{
+    #aboutUsSection .posRelative{
         margin: 0 0 1rem 0;
     }
 }
 
 @media screen and (min-width: 768px){
-    .planningSection .firstBox, .planningSection .secondBox{
+    #planningSection .firstBox, #planningSection .secondBox{
         width: 45%;
     }
 
@@ -358,23 +384,23 @@ mobile: dai 480px in giù */
         line-height: 1.5rem;
     }
 
-    .benefitsSection .card{
+    #benefitsSection .card{
         width: calc(100% / 3 - 1rem);
     }
 
-    .aboutUsSection .firstBox{
+    #aboutUsSection .firstBox{
         width: 70%;
     }
 
-    .aboutUsSection .posRelative{
+    #aboutUsSection .posRelative{
         margin: 0 0 1rem 0;
     }
 
-    .aboutUsSection .secondBox{
+    #aboutUsSection .secondBox{
         width: 20%;
     }
 
-    .aboutUsSection .secondBox .fa-quote-left{
+    #aboutUsSection .secondBox .fa-quote-left{
         font-size: 6.5vw;
     }
 
@@ -392,7 +418,7 @@ mobile: dai 480px in giù */
 }
 
 @media screen and (min-width: 1100px){
-    .aboutUsSection .secondBox .fa-quote-left{
+    #aboutUsSection .secondBox .fa-quote-left{
         font-size: 4.5rem;
     }
 }
