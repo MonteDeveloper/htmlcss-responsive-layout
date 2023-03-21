@@ -301,11 +301,11 @@ mobile: dai 480px in giù */
         margin-left: .5rem;
     }
 
-    .testimonialSection .col80{
+    .testimonialSection .firstBox{
         width: 25%;
     }
 
-    .testimonialSection .col100{
+    .testimonialSection .secondBox{
         width: 70%;
         text-align: start;
     }
